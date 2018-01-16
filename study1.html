@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+    <title>HTML test</title>
+    <meta charset="utf-8">
+    <style>
+        ul, li{
+            list-style-type: none;
+            line-height: 18px;
+        }
+
+        form {
+            margin: 30px auto 110px;
+        }
+        li {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+        #head_menu_lgbt {
+            border-color: gray;
+            color: red;
+        }
+        #head_menu {
+            height: 30px;
+            position: absolute;
+            right: 10px;
+            text-align: right;
+            top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id = "all_body">
+    <div id = "top">
+        <div id = "head_name">
+            <a> 아주대학교 </a>
+        </div>
+        <div id = "head_menu">
+            <ul>
+                <li id = "head_menu_lgbt">
+                    <a> 로그인 </a>
+                </li>
+                <li>
+                    <a target = "_blank"> 중앙도서관 </a>
+                </li>
+                <li>
+                    <a target = "_blank"> 의과대학 </a>
+                </li>
+                <li>
+                    <a target = "_blank"> 간호대학 </a>
+                </li>
+                <li>
+                    <a target = "_blank"> CSDL </a>
+                </li>
+                <li>
+                    <a> SITEMAP </a>
+                </li>
+                <li>
+                    <a target = "_self"> KOR </a>
+                </li>
+                <li>
+                    <a target = "_self"> ENG </a>
+                </li>
+            </ul>
+        </div>
+        <div id = "head_menu2">
+            <ul>
+                <li>
+                    <a> 자료검색 </a>
+                </li>
+                <li>
+                    <a> 내 도서관 관리 </a>
+                </li>
+                <li>
+                    <a> 이용안내 </a>
+                </li>
+                <li>
+                    <a> 센터소개 </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id = "middle">
+        <div id = "middle_top">
+            <div id = "search">
+                <ul class = "searchtab">
+                    <li> PubMed </li>
+                    <li> 소장자료 </li>
+                </ul>
+                <div id = "search_bar">
+                    <ul>
+                        <form type = "text", name = "search_bar">
+                            <input type = "text", name = "term", id = "term", value class = "type-text", title = "검색어 입력">
+                            <input type = "button", value = "검색">
+                        </form>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id = "middle_middle"> </div>
+        <div id = "middle_bottom"> </div>
+    </div>
+    <div id = "bottom"> </div>
+
+</div>
+</body>
