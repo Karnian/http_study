@@ -15,6 +15,21 @@
             display: list-item;
             text-align: -webkit-match-parent;
         }
+        img, a{
+            margin:0px;
+            padding:0px;
+            border-style: none;
+        }
+        #top {
+            position: relative;
+            z-index: 2;
+            margin: 0px auto;
+            width: 970px;
+            height: 117px;
+        }
+        #head_name{
+            text-align:left;
+        }
         #head_menu_lgbt {
             border-color: gray;
             color: red;
@@ -26,6 +41,18 @@
             text-align: right;
             top: 25px;
         }
+        #head_menu2{
+            font-size: large;
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+            background-color: #1f488e;
+            color: white;
+            list-style: none;
+            position:relative;
+            float:left;
+            padding:0;
+        }
     </style>
 </head>
 
@@ -34,32 +61,26 @@
 <div id = "all_body">
     <div id = "top">
         <div id = "head_name">
-            <a> 아주대학교 </a>
+            <a href = "#"> 아주대학교 </a>
         </div>
         <div id = "head_menu">
             <ul>
                 <li id = "head_menu_lgbt">
-                    <a> 로그인 </a>
+                    <a href = "#"> 로그인 </a>
                 </li>
                 <li>
-                    <a target = "_blank"> 중앙도서관 </a>
-                </li>
-                <li>
-                    <a target = "_blank"> 의과대학 </a>
-                </li>
-                <li>
-                    <a target = "_blank"> 간호대학 </a>
-                </li>
-                <li>
-                    <a target = "_blank"> CSDL </a>
-                </li>
-                <li>
-                    <a> SITEMAP </a>
-                </li>
-                <li>
+                    <a href = "http://library.ajou.ac.kr/index.ax" target = "_blank"> 중앙도서관 |</a>
+
+                    <a href = "http://ts.ajoumc.or.kr/Main/MainType08.aspx?cp=1&sid=&rc=10&ssc=0010&ssgc=UH&CCP=1" target = "_blank"> 의과대학 |</a>
+
+                    <a href = "http://ts.ajoumc.or.kr/Main/MainType07.aspx?cp=1&sid=&rc=10&ssc=0007&ssgc=UH&CCP=1" target = "_blank"> 간호대학 |</a>
+
+                    <a href = "#" target = "_blank"> CSDL |</a>
+
+                    <a href = "#"> SITEMAP |</a>
+
                     <a target = "_self"> KOR </a>
-                </li>
-                <li>
+
                     <a target = "_self"> ENG </a>
                 </li>
             </ul>
@@ -68,14 +89,11 @@
             <ul>
                 <li>
                     <a> 자료검색 </a>
-                </li>
-                <li>
+
                     <a> 내 도서관 관리 </a>
-                </li>
-                <li>
+
                     <a> 이용안내 </a>
-                </li>
-                <li>
+
                     <a> 센터소개 </a>
                 </li>
             </ul>
@@ -85,8 +103,10 @@
         <div id = "middle_top">
             <div id = "search">
                 <ul class = "searchtab">
-                    <li> PubMed </li>
-                    <li> 소장자료 </li>
+                    <li>
+                        <a>PubMed </a>
+                        <a> 소장자료</a>
+                    </li>
                 </ul>
                 <div id = "search_bar">
                     <ul>
