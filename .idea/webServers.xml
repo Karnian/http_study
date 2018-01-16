@@ -3,11 +3,11 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="5139c73c-b418-41b6-ab92-252127294a11" name="http://khh9201.iwinv.net/" url="http://khh9201.iwinv.net/">
-        <fileTransfer host="115.68.168.125" port="21">
+        <fileTransfer host="115.68.168.125" port="22" rootFolder="/home1/khh9201" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="21" />
+          <option name="port" value="22" />
         </fileTransfer>
       </webServer>
     </option>

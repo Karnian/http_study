@@ -2,58 +2,7 @@
 <head>
     <title>HTML test</title>
     <meta charset="utf-8">
-    <style>
-        ul, li{
-            list-style-type: none;
-            line-height: 18px;
-        }
-
-        form {
-            margin: 30px auto 110px;
-        }
-        li {
-            display: list-item;
-            text-align: -webkit-match-parent;
-        }
-        img, a{
-            margin:0px;
-            padding:0px;
-            border-style: none;
-        }
-        #top {
-            position: relative;
-            z-index: 2;
-            margin: 0px auto;
-            width: 970px;
-            height: 117px;
-        }
-        #head_name{
-            text-align:left;
-        }
-        #head_menu_lgbt {
-            border-color: gray;
-            color: red;
-        }
-        #head_menu {
-            height: 30px;
-            position: absolute;
-            right: 10px;
-            text-align: right;
-            top: 25px;
-        }
-        #head_menu2{
-            font-size: large;
-            display: flex;
-            justify-content: center;
-            margin-top: 15px;
-            background-color: #1f488e;
-            color: white;
-            list-style: none;
-            position:relative;
-            float:left;
-            padding:0;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="study1_common.css">
 </head>
 
 <body>
@@ -85,20 +34,21 @@
                 </li>
             </ul>
         </div>
-        <div id = "head_menu2">
-            <ul>
-                <li>
-                    <a> 자료검색 </a>
-
-                    <a> 내 도서관 관리 </a>
-
-                    <a> 이용안내 </a>
-
-                    <a> 센터소개 </a>
-                </li>
-            </ul>
-        </div>
     </div>
+    <div id = "top2">
+        <ul>
+            <li>
+                <a> 자료검색 </a>
+
+                <a> 내 도서관 관리 </a>
+
+                <a> 이용안내 </a>
+
+                <a> 센터소개 </a>
+            </li>
+        </ul>
+    </div>
+
     <div id = "middle">
         <div id = "middle_top">
             <div id = "search">
@@ -118,7 +68,74 @@
                 </div>
             </div>
         </div>
-        <div id = "middle_middle"> </div>
+        <div id = "middle_middle">
+            <div id = "service_tab">
+                <span id = "quick_service">
+                    <h2>빠른서비스</h2>
+                    <ul>
+                        <li>
+                            <span>
+                                <a href = "#">원문복사신청</a>
+                            </span>
+                            <span>
+                                <a href = "#">논문교정신청</a>
+                            </span>
+                            <span>
+                                <a href = "#">도서구입신청</a>
+                            </span>
+                            <span>
+                                <a href = "#">대출현황/조회</a>
+                            </span>
+                            <span>
+                                <a href = "#">뉴스레터</a>
+                            </span>
+                        </li>
+                    </ul>
+                </span>
+                <span id = "info_service">
+                    <h2>전자정보서비스</h2>
+                    <ul>
+                        <a href = "#">
+                            <li>E-JOURNAL</li>
+                        </a>
+                        <a href = "#">
+                            <li>E-BOOK</li>
+                        </a>
+                        <a href = "#">
+                            <li>E-DATABASE</li>
+                        </a>
+                    </ul>
+                </span>
+            </div>
+            <div id = "db_tab">
+                <span id = "notice">
+                    <h2>공지사항</h2>
+                </span>
+                <span id = "db">
+                    <h2>주요 데이터베이스</h2>
+                    <ul>
+                        <a href = "#" target = "_blank">
+                            <li>PUBMED</li>
+                        </a>
+                        <a href = "#" target = "_blank">
+                            <li>SCOPUS</li>
+                        </a>
+                        <a href = "#" target = "_blank">
+                            <li>CLINICAL KEY</li>
+                        </a>
+                        <a href = "#" target = "_blank">
+                            <li>CINAHL</li>
+                        </a>
+                        <a href = "#" target = "_blank">
+                            <li>UPDATE</li>
+                        </a>
+                        <a href = "#" target = "_blank">
+                            <li>HERISON`S ONLINE</li>
+                        </a>
+                    </ul>
+                </span>
+            </div>
+        </div>
         <div id = "middle_bottom"> </div>
     </div>
     <div id = "bottom"> </div>

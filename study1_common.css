@@ -1,0 +1,50 @@
+ul, li{
+    list-style-type: none;
+    line-height: 18px;
+}
+
+form {
+    margin: 30px auto 110px;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+img, a{
+    margin:0px;
+    padding:0px;
+    border-style: none;
+}
+#top {
+    position: relative;
+    z-index: 2;
+    margin: 0px auto;
+    width: 970px;
+    height: 117px;
+}
+#head_name{
+    text-align:left;
+}
+#head_menu_lgbt {
+    border-color: gray;
+    color: red;
+}
+#head_menu {
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    text-align: right;
+    top: 25px;
+}
+#top2{
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    background-color: #1f488e;
+    color: white;
+    list-style: none;
+    position:relative;
+    float:left;
+    padding:0;
+}
