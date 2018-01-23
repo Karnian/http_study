@@ -38,7 +38,7 @@ img, a{
 }
 #top2{
     font-size: large;
-    display: flex;
+    display: block;
     justify-content: center;
     margin-top: 15px;
     background-color: #1f488e;
@@ -47,4 +47,12 @@ img, a{
     position:relative;
     float:left;
     padding:0;
+}
+
+#quick_service{
+    display: inline;
+}
+
+#db{
+    display: inline;
 }
