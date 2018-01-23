@@ -50,7 +50,11 @@ img, a{
 }
 
 #quick_service{
-    display: inline;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    height: 210px;
+    border-right:1px solid #d0d0d0;
 }
 
 #db{
