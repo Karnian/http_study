@@ -3,6 +3,19 @@
     padding : 0;
 }
 
-#head{
+#second_screen {
+    hight: auto;
+    minhight: 500px;
+    box-sizing: border-box;
+    margin : 100px auto;
+    padding : 15px;
+}
 
+#lg_screen {
+    hight: auto;
+    minhight: 500px;
+    max-width : 330px;
+    box-sizing: border-box;
+    padding : 15px;
+    margin : 100px auto;
 }
