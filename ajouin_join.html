@@ -32,7 +32,7 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <!--            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"> -->
-                <a href="ajouin_join.html" class="btn btn-outline-success my-2 my-sm-0" type="submit">Join</a>
+                <a href="ajouin_join.php" class="btn btn-outline-success my-2 my-sm-0" type="submit">Join</a>
             </form>
             <form class="form-inline my-2 my-lg-0">
                 <!--            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"> -->
@@ -43,6 +43,7 @@
 </div>
 
 <div class="row" id = "second_screen">
+    <form action="./process.php?mode=insert" method="POST">
     <!--
     <div class="col-md-4 order-md-2 mb-4">
         <h4 class="d-flex justify-content-between align-items-center mb-3">
@@ -94,9 +95,11 @@
         </form>
     </div>
     -->
+
     <div class="col-md-8 order-md-1">
         <h4 class="mb-3">Information</h4>
         <form class="needs-validation" novalidate="">
+            <!--
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <label for="firstName">First name</label>
@@ -113,7 +116,7 @@
                     </div>
                 </div>
             </div>
-
+-->
             <div class="mb-3">
                 <label for="username">Username</label>
                 <div class="input-group">
@@ -126,15 +129,21 @@
                     </div>
                 </div>
             </div>
-
             <div class="mb-3">
-                <label for="email">Email <span class="text-muted">(Optional)</span></label>
+                <label for="password">Password <span class="text-muted"></span></label>
+                <input type="password" class="form-control" id="password" placeholder="Password">
+                <div class="invalid-feedback">
+                    Valid Password is required.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="email">Email <span class="text-muted"></span></label>
                 <input type="email" class="form-control" id="email" placeholder="you@example.com">
                 <div class="invalid-feedback">
                     Please enter a valid email address for shipping updates.
                 </div>
             </div>
-
+<!--
             <div class="mb-3">
                 <label for="address">Address</label>
                 <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
@@ -179,6 +188,7 @@
                     </div>
                 </div>
             </div>
+            -->
             <!--
             <hr class="mb-4">
             <div class="custom-control custom-checkbox">
@@ -190,6 +200,7 @@
                 <label class="custom-control-label" for="save-info">Save this information for next time</label>
             </div>
             -->
+    <!--
             <hr class="mb-4">
 
             <h4 class="mb-3">Payment</h4>
@@ -241,6 +252,7 @@
                     </div>
                 </div>
             </div>
+            -->
             <hr class="mb-4">
             <button class="btn btn-primary btn-lg btn-block" type="submit">Jo-Ajou-In</button>
         </form>
