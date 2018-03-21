@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+session_start();
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -36,14 +39,14 @@
             </form>
             <form class="form-inline my-2 my-lg-0">
                 <!--            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"> -->
-                <a href="ajouin_login.html" class="btn btn-outline-success my-2 my-sm-0" type="submit">LogIn</a>
+                <a href="ajouin_login.php" class="btn btn-outline-success my-2 my-sm-0" type="submit">LogIn</a>
             </form>
         </div>
     </nav>
 </div>
 
 <div class="row" id = "second_screen">
-    <form action="./process.php?mode=insert" method="post">
+    <form action="./process.php?mode=insert" method="post" novalidate="" class="col-md-8 order-md-1">
         <!--
         <div class="col-md-4 order-md-2 mb-4">
             <h4 class="d-flex justify-content-between align-items-center mb-3">
@@ -96,9 +99,8 @@
         </div>
         -->
 
-        <div class="col-md-8 order-md-1">
+        <div>
             <h4 class="mb-3">Information</h4>
-            <form class="needs-validation" novalidate="">
                 <!--
                 <div class="row">
                     <div class="col-md-6 mb-3">
@@ -123,7 +125,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text">@</span>
                         </div>
-                        <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                        <input type="text" class="form-control" name="username" placeholder="Username" required="">
                         <div class="invalid-feedback" style="width: 100%;">
                             Your username is required.
                         </div>
@@ -131,14 +133,14 @@
                 </div>
                 <div class="mb-3">
                     <label for="password">Password <span class="text-muted"></span></label>
-                    <input type="password" class="form-control" id="password" placeholder="Password">
+                    <input type="password" class="form-control" name="password" placeholder="Password">
                     <div class="invalid-feedback">
                         Valid Password is required.
                     </div>
                 </div>
                 <div class="mb-3">
                     <label for="email">Email <span class="text-muted"></span></label>
-                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                    <input type="email" class="form-control" name="email" placeholder="you@example.com">
                     <div class="invalid-feedback">
                         Please enter a valid email address for shipping updates.
                     </div>

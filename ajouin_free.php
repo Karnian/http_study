@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+session_start();
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -40,9 +43,6 @@
             </form>
         </div>
     </nav>
-</div>
-<div id = "second_screen">
-    아주인에 어서오세요.
 </div>
 </body>
 </html>

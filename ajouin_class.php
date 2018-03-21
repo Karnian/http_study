@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+session_start();
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -41,8 +44,31 @@
         </div>
     </nav>
 </div>
-<div id = "second_screen">
-    아주인에 어서오세요.
+<div class="container" id = second_screen>
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-md-4">
+            <h2>N0.1</h2>
+            <p>professor NO.1
+            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>NO.2</h2>
+            <p>professor NO.2
+            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>NO.3</h2>
+            <p>professor NO.3
+            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+        </div>
+    </div>
+
+    <hr>
+
 </div>
+<footer class="container">
+    <p>© Company 2017-2018</p>
+</footer>
 </body>
 </html>
